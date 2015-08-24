@@ -1,0 +1,15 @@
+strong {
+  display: inline; /* this is the default */
+  
+  /* add a margin */
+  margin: 60px;
+  background-color: #28aadc;
+}
+
+span {
+  display: inline; /* this is the default */
+  
+  /*add a padding and background color #28aadc */
+  padding: 60px;
+  background-color: #28aadc;
+}

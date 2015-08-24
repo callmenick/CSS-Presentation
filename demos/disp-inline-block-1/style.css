@@ -1,0 +1,8 @@
+span {
+  display: inline-block;
+
+  /* set margin, padding, and background colour here */
+  margin: 24px;
+  padding: 24px;
+  background-color: #777;
+}

@@ -1,0 +1,27 @@
+/*
+.box {
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+.box1 {
+  top: 40px;
+  left: 40px;
+  z-index: 99;
+  background-color: #ccc;
+}
+
+.box2 {
+  top: -40px;
+  left: -40px;
+  z-index: 100;
+  background-color: #999;
+}
+
+p {
+  position: relative;
+  z-index: 101;
+}
+*/

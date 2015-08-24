@@ -1,0 +1,20 @@
+.box {
+  display: inline-block;
+  vertical-align: top;
+  width: 240px;
+  height: 240px;
+  background-color: #777;
+}
+
+.box1 {
+  /* defaults */
+  padding: 24px;
+  border: solid 24px #555;
+}
+
+.box2 {
+  /* apply border box here */
+  padding: 24px;
+  border: solid 24px #555;
+  box-sizing: border-box;
+}

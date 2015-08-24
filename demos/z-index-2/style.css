@@ -1,0 +1,29 @@
+.z {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.z5,
+.z10 {
+  padding: 96px;
+}
+
+.z5 {
+  z-index: 5;
+  background-color: rgb(59, 59, 59);
+}
+
+.z10 {
+  z-index: 10;
+  background-color: rgb(40, 170, 220);
+}
+
+.z20 {
+  /* uncomment this value to see nested z-indexes in action */
+  /*left: -360px;*/
+
+  padding: 48px;
+  background-color: rgb(255, 50, 100);
+}

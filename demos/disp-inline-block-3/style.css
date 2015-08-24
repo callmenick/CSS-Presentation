@@ -1,0 +1,21 @@
+.container {
+  background-color: rgb(255, 50, 100);
+
+  /* add width here */
+}
+
+.box {
+  display: inline-block;
+  padding: 24px;
+  color: #fff;
+
+  /* add width and height here */
+}
+
+.box1 {
+  background-color: rgb(59, 59, 59);
+}
+
+.box2 {
+  background-color: rgb(89, 89, 89);
+}

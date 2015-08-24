@@ -1,0 +1,16 @@
+body {
+  padding: 24px;
+  color: #555;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+}

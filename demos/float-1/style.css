@@ -1,0 +1,9 @@
+img {
+  /* include float right */
+  float: right;
+}
+
+article {
+  /* include background color */
+  background-color: #aaa;
+}

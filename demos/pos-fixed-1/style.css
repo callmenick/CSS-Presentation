@@ -1,0 +1,23 @@
+.fix {
+  position: fixed;
+  padding: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.fix1 {
+  top: 0; left: 0;
+  background-color: rgb(255, 50, 100);
+}
+
+.fix2 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(40, 170, 220);
+}
+
+.fix3 {
+  top: 0;
+  right: 0;
+  background-color: rgb(129, 129, 129);
+}

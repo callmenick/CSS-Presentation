@@ -1,0 +1,19 @@
+.z {
+  position: relative;
+  padding: 96px 0;
+  width: 240px;
+  color: #fff;
+  text-align: center;
+}
+
+.z1 {
+  z-index: 1;
+  background-color: rgb(40, 170, 220);
+}
+
+.z2 {
+  z-index: 2;
+  top: -120px;
+  right: -120px;
+  background-color: rgb(59, 59, 59);
+}

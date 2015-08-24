@@ -1,0 +1,256 @@
+/* -----------------------------------------------------------------------------
+
+  BOX SIZING
+  
+----------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* -----------------------------------------------------------------------------
+
+  ROOT
+  
+----------------------------------------------------------------------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  color: #555;
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+h1,
+h2 {
+  color: #333;
+  line-height: 1.2em;
+}
+
+/* -----------------------------------------------------------------------------
+
+  NAVBAR
+  
+----------------------------------------------------------------------------- */
+
+.navbar {
+  padding: 1em;
+  background-color: #333;
+}
+
+.navbar__logo {
+  margin-bottom: 1em;
+}
+
+.navbar__logo img {
+  display: block;
+  margin: 0 auto;
+
+  /* responsive images, set a max width and an auto height */
+  max-width: 96px;
+  height: auto;
+}
+
+@media all and (min-width: 768px) {
+
+  .navbar {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2em;
+    width: 360px;
+    height: 100%;
+    text-align: center;
+  }
+
+  .navbar__logo {
+    margin-bottom: 8em;
+  }
+
+  .navbar__logo img {
+    max-width: 100%;
+  }
+
+}
+
+/* -----------------------------------------------------------------------------
+
+  NAV
+  
+----------------------------------------------------------------------------- */
+
+.nav {
+  /**/
+}
+
+.nav__items {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav__item {
+  display: inline-block;
+  margin: 0 1em;
+  font-size: 1em;
+}
+
+.nav__link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__link:hover,
+.nav__link--active {
+  color: #777;
+}
+
+@media all and (min-width: 768px) {
+
+  .nav__item {
+    display: block;
+    margin: 1em 0;
+    font-size: 2em;
+  }
+
+  .nav__link {
+    display: inline-block;
+  }
+
+}
+
+/* -----------------------------------------------------------------------------
+
+  MAIN
+  
+----------------------------------------------------------------------------- */
+
+.main {
+  padding: 1em;
+}
+
+@media all and (min-width: 768px) {
+
+  .main {
+    margin-left: 360px;
+    padding: 2em;
+    max-width: 960px;
+  }
+
+}
+
+/* -----------------------------------------------------------------------------
+
+  GRID
+  
+----------------------------------------------------------------------------- */
+
+.grid {
+  /**/
+}
+
+.grid__row {
+  margin: 0 auto;
+  max-width: 480px;
+}
+
+@media all and (min-width: 960px) {
+
+  .grid__row {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .grid__row {
+    margin: 0 -1em;
+  }
+
+  .grid__item {
+    float: left;
+    padding: 1em;
+  }
+
+  .grid__item--50 {
+    width: 50%;
+  }
+
+}
+
+/* -----------------------------------------------------------------------------
+
+  ENTRY
+  
+----------------------------------------------------------------------------- */
+
+.entry__image {
+  position: relative;
+}
+
+.entry__image > img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.entry__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.entry__image:hover .entry__overlay {
+  opacity: 1;
+}
+
+.entry__info {
+  /* vertical alignment hack! */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.entry__meta {
+  display: block;
+  margin: 0.5em 0;
+  color: #fff;
+  text-align: center;
+}
+
+.entry__meta em {
+  color: #777;
+}
+
+/* -----------------------------------------------------------------------------
+
+  UTILITIES
+  
+----------------------------------------------------------------------------- */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
